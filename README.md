@@ -5,7 +5,7 @@
 A [Leaflet](https://github.com/Leaflet/Leaflet) plugin to view mapcodes of the
 mouse pointer on mouse move.
 
-[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/example/demo.html)
+[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/examples/demo.html)
 
 ### Usage
 
