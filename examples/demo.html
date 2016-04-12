@@ -34,7 +34,9 @@
                 attribution: "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
             }).addTo(map);
 
-            L.control.Mapcodes().addTo(map);
+            L.control.Mapcodes({
+                labelTemplate: "Mapcode: <b>{0}</b>"
+            }).addTo(map);
         </script>
     </body>
 </html>

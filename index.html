@@ -8,6 +8,21 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <style>
+        #map { height: 380px;  }
+    </style>
+
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script type="text/javascript" src="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <script type="text/javascript" src="examples/mapcode-js/ndata.js"></script>
+    <script type="text/javascript" src="examples/mapcode-js/ctrynams.js"></script>
+    <script type="text/javascript" src="examples/mapcode-js/mapcode.js"></script>
+
+    <link rel="stylesheet" href="examples/Leaflet.Mapcodes.css" />
+    <script type="text/javascript" src="examples/Leaflet.Mapcodes.js"></script>
+
   </head>
   <body>
     <section class="page-header">
@@ -27,12 +42,13 @@
 <p>A <a href="https://github.com/Leaflet/Leaflet">Leaflet</a> plugin to view mapcodes of the
 mouse pointer on mouse move.</p>
 
-<p><a href="http://matlads.github.io/Leaflet.Mapcodes/examples/demo.html">Live Demo</a></p>
+<div id='map'></div>
+
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
-<p>Include mapcode-js files, before this plugins javascript, and css code</p>
+<p>Leaflet.Mapcodes depends on <a href="https://github.com/mapcode-foundation/mapcode-js">mapcode-js</a> so include mapcode-js files, before this plugins javascript, and css code</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>mapcode-js/ndata.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>mapcode-js/ctrynams.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
@@ -49,6 +65,12 @@ mouse pointer on mouse move.</p>
 }).<span class="pl-en">addTo</span>(map);</pre></div>
 
 <h3>
+<a id="live-demo" class="anchor" href="#live-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Standalone demo</h3>
+
+<p><a href="examples/demo.html">Live Demo</a></p>
+
+
+<h3>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
 
 <p>Distributed under <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License V2 or greater</a></p>
@@ -61,6 +83,17 @@ mouse pointer on mouse move.</p>
 
     </section>
 
+        <script type="text/javascript">
+            var map = L.map('map').setView([51.5085300, -0.1257400], 16);
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+            }).addTo(map);
+
+            L.control.Mapcodes({
+                position: 'topright',
+                labelTemplate: '<b>Mapcode: {0}</b>'
+            }).addTo(map);
+        </script>
   
   </body>
 </html>
