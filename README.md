@@ -9,7 +9,9 @@ mouse pointer on mouse move.
 
 ### Usage
 
-Include mapcode-js files, before this plugins javascript, and css code
+Install mapcode-js files from the mapcode foundation
+[repository](https://github.com/mapcode-foundation/mapcode-js) then include the
+mapcode-js files, before this plugins Javascript, and CSS code
 
 ``` html
 <script type="text/javascript" src="mapcode-js/ndata.js"></script>
