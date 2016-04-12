@@ -1,0 +1,24 @@
+{
+  "name": "Leaflet.Mapcodes",
+  "homepage": "https://matlads.github.io/Leaflet.Mapcodes",
+  "authors": [
+    "Martin Atukunda <matlads@gmail.com>"
+  ],
+  "description": "Mapcode control for Leaflet",
+  "main": [
+    "src/Leaflet.Mapcodes.js",
+    "src/Leaflet.Mapcodes.css"
+  ],
+  "keywords": [
+    "Leaflet",
+    "Mapcode"
+  ],
+  "license": "GPL3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
