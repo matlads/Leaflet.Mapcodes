@@ -1,0 +1,22 @@
+{
+  "name": "Leaflet.Mapcodes",
+  "version": "0.1.0",
+  "description": "Mapcode control for LeafletJS",
+  "main": "src/Leaflet.Mapcodes.js",
+  "author": "Martin Atukunda <matlads@gmail.com>",
+  "repository": "git://github.com/matlads/Leaflet.Mapcodes.git",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "leaflet": "^0.7.7"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-uglify": "~1.0.1"
+  },
+  "scripts": {
+    "prepublish": "grunt build"
+  }
+}
