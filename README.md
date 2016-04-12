@@ -5,7 +5,16 @@
 A [Leaflet](https://github.com/Leaflet/Leaflet) plugin to view mapcodes of the
 mouse pointer on mouse move.
 
-[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/examples/demo.html)
+### Requirements
+
+Leaflet.Mapcodes requires
+
+* [leaflet](http://github.com/Leaflet/Leaflet)
+* [mapcode-js](https://github.com/mapcode-foundation/mapcode-js)
+
+### Standalone demo
+
+A [Live Demo](http://matlads.github.io/Leaflet.Mapcodes/examples/demo.html) is available
 
 ### Usage
 
@@ -33,4 +42,4 @@ L.control.Mapcode({
 
 
 ### License
-Distributed under [GNU General Public License V2 or greater](http://www.gnu.org/licenses/gpl.html)
+See the [LICENSE](LICENSE) file in the repo
