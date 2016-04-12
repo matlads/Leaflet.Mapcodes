@@ -1,7 +1,7 @@
 # Leaflet.Mapcodes
 Mapcode control for Leaflet - A leaflet plugin to view mapcodes of the mouse ponter on mouse move
 
-[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/example/demo.html)
+[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/examples/demo.html)
 
 ### Usage
 
