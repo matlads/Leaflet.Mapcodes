@@ -1,0 +1,6 @@
+{
+  "name": "Leaflet.Mapcodes",
+  "tagline": "Mapcode control for Leaflet - A leaflet plugin to view mapcodes of the mouse ponter on mouse move",
+  "body": "# Leaflet.Mapcodes\r\n\r\n[Mapcode](http://mapcode.com) control for [LeafletJS](http://leafletjs.com)\r\n\r\nA [Leaflet](https://github.com/Leaflet/Leaflet) plugin to view mapcodes of the\r\nmouse pointer on mouse move.\r\n\r\n[Live Demo](http://matlads.github.io/Leaflet.Mapcodes/example/demo.html)\r\n\r\n### Usage\r\n```javascript\r\nL.control.Mapcode({\r\n    position: \"bottomleft\",  // optional default \"bottomright\"\r\n    labelTemplate: \"Mapcode: {0}\", // optional default \"{0}\"\r\n}).addTo(map);\r\n```\r\n\r\n\r\n### License\r\nDistributed under [GNU General Public License V2 or greater](http://www.gnu.org/licenses/gpl.html)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
