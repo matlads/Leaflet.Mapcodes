@@ -34,7 +34,7 @@ mapcode-js files, before this plugins Javascript, and CSS code
 Then add the control to the map like so:
 
 ```javascript
-L.control.Mapcode({
+L.control.mapcode({
     position: "bottomleft",  // optional default "bottomright"
     labelTemplate: "Mapcode: {0}", // optional default "{0}"
 }).addTo(map);

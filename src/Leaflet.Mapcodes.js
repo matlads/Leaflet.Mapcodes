@@ -94,7 +94,7 @@
 	});
 
 	// constructor registration
-	L.control.Mapcodes = function(options){
+	L.control.mapcodes = function(options){
 	    return new MapcodesControl(options);
 	};
 
