@@ -82,6 +82,11 @@ L.control.Mapcodes = function(options){
     return new L.Control.Mapcodes(options);
 };
 
+// constructor registration
+L.control.mapcodes = function(options){
+    return new L.Control.Mapcodes(options);
+};
+
 // map init hook
 L.Map.mergeOptions({
     MapcodeControl: false
